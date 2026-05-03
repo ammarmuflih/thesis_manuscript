@@ -22,7 +22,7 @@
     date=year,            % Hanya tampilkan tahun
     urldate=long,         % Format tanggal akses panjang
     isbn=false,           % Tidak perlu menampilkan ISBN
-    doi=false             % Tidak perlu menampilkan DOI
+    doi=true              % Tampilkan DOI jika ada (wajib per ketentuan terbaru)
 ]{biblatex}
 
 % --- 2. PENGATURAN BAHASA & ISTILAH ---
@@ -42,13 +42,20 @@
 % --- 3. FORMAT DAFTAR PUSTAKA ---
 
 % A. Spasi: Tunggal di dalam item, 1.5 antar item
-\setlength{\bibitemsep}{0.5\baselineskip} % Jarak antar item (tambah 0.5 dari single)
+\setlength{\bibitemsep}{\baselineskip} % Jarak antar pustaka ~1.5 spasi
 \AtBeginBibliography{\singlespacing}      % Paksa spasi tunggal di dalam item
 
 % B. Format Nama: Nama Belakang, Inisial. 
 \DeclareNameAlias{sortname}{family-given}
 \DeclareNameAlias{default}{family-given}
 \DeclareNameAlias{author}{family-given}
+
+% Jika tidak ada penulis, tampilkan "Anonim"
+\renewbibmacro*{author}{%
+    \ifnameundef{author}
+    {\printtext{Anonim}}
+    {\printnames{author}}%
+}
 
 % C. Tanda Baca
 % Gunakan koma sebagai pemisah antar elemen, bukan titik 
@@ -85,6 +92,20 @@
 % 7. Laporan Penelitian: Nama Laporan Miring
 \DeclareFieldFormat[report]{type}{\mkbibemph{#1}}
 \DeclareFieldFormat[report]{title}{#1}
+
+% 8. Paten: Judul Miring
+\DeclareFieldFormat[patent]{title}{\mkbibemph{#1}}
+\DeclareFieldFormat[patent]{number}{No.\ #1}
+
+% 9. Buku Terjemahan: format penerjemah
+\renewbibmacro*{bytranslator+others}{%
+    \ifnameundef{translator}
+    {}
+    {\printtext{(diterjemahkan oleh:\addspace}%
+     \printnames{translator}%
+     \printtext{)}}%
+    \newunit
+}
 
 % --- 4. MAKRO PENYUSUNAN ELEMEN ---
 
