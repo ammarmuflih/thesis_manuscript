@@ -335,7 +335,7 @@
         \pagenumbering{roman}
         \begin{center}
             \begin{singlespacing}
-                \MakeUppercase{\normalfont\bfseries Usulan Penelitian S2}\\
+                \MakeUppercase{\normalfont\bfseries Proposal Tesis}\\
                 \vspace{1.5cm}
                 \MakeUppercase{\normalfont\bfseries\@titleind}\\
                 \vspace{0.5em}
