@@ -56,7 +56,7 @@
 \DeclareNameAlias{default}{family-given}
 \DeclareNameAlias{author}{family-given}
 
-% C. Author macro: tampilkan "Anonim" jika kosong + inject tahun setelah nama
+% C. Author macro: inject tahun setelah nama penulis
 % Root cause: biblatex authoryear style's date+extradate macro is unreliable
 % (biber does not populate labelyear). Solution: print year directly in author macro.
 \renewbibmacro*{author}{%
@@ -64,6 +64,14 @@
     {\printtext{Anonim}}
     {\printnames{author}}%
     \iffieldundef{year}{}{\setunit{\addcomma\space}\printfield{year}}%
+}
+% D. Handle entries without author: prepend "Anonim, year," before title
+\renewbibmacro*{begentry}{%
+    \ifnameundef{author}{%
+        \printtext{Anonim}%
+        \iffieldundef{year}{}{\setunit{\addcomma\space}\printfield{year}}%
+        \setunit{\addcomma\space}%
+    }{}%
 }
 \DeclareDelimFormat[bib]{nameyeardelim}{\addcomma\space}
 \DeclareDelimFormat{nameyeardelim}{\addcomma\space}
