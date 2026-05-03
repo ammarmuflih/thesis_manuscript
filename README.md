@@ -193,6 +193,40 @@ Untuk mode English, gunakan: `theorem`, `definition`, `lemma`, `corollary`, `pro
 
 ---
 
+## Sitasi / Citation
+
+Template ini menggunakan sistem sitasi **Harvard (author-year)** dengan biblatex. Perintah `\cite` sudah dikonfigurasi agar otomatis menghasilkan output **dengan kurung**.
+
+### Perintah Sitasi yang Tersedia
+
+| Perintah | Output | Keterangan |
+|----------|--------|------------|
+| `\cite{ross2004}` | (Ross, 2004) | Sitasi standar dengan kurung |
+| `\cite{ross2004, nagle2004}` | (Ross, 2004; Nagle et al., 2004) | Sitasi ganda |
+| `\textcite{ross2004}` | Ross (2004) | Sitasi naratif (nama di luar kurung) |
+
+### Contoh Penggunaan
+
+```latex
+% Sitasi di akhir kalimat
+Deteksi objek telah berkembang pesat dalam beberapa tahun terakhir \cite{ross2004}.
+
+% Sitasi naratif (nama penulis sebagai bagian kalimat)
+Menurut \textcite{ross2004}, deteksi objek dapat dilakukan secara real-time.
+
+% Sitasi ganda
+Beberapa penelitian telah membahas topik ini \cite{ross2004, nagle2004}.
+```
+
+### Catatan Penting
+
+- Semua referensi harus didaftarkan di file `references.bib`
+- Gunakan `\cite` untuk sitasi standar (otomatis dengan kurung)
+- Gunakan `\textcite` jika nama penulis menjadi bagian dari kalimat
+- DOI akan otomatis ditampilkan di daftar pustaka jika tersedia di file `.bib`
+
+---
+
 ## Prasyarat / Prerequisites
 
 - **TeX Distribution**: MiKTeX atau TeX Live (terbaru)
