@@ -28,6 +28,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{calc}%Simple arithmetic lib
 \RequirePackage{pdfpages} %include pdf file in latex
+\RequirePackage{pgffor} %iterative counter
 %\RequirePackage{titlesec}
 
 % Folder packages
