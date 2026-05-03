@@ -68,6 +68,42 @@
 \usepackage{fancyhdr}% page number
 \usepackage[cmex10]{amsmath}
 \usepackage{amssymb}
+\usepackage{amsthm}
+
+% Theorem style with italic body (per FMIPA guidelines)
+\newtheoremstyle{fmipastyle}%
+    {12pt}{12pt}%       % space above / below
+    {\itshape}%          % body font: italic
+    {}%                  % indent
+    {\bfseries}%         % head font: bold
+    {.}%                 % punctuation after head
+    { }%                 % space after head
+    {}%                  % head spec
+
+\theoremstyle{fmipastyle}
+\newtheorem{definisi}{Definisi}[chapter]
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{lema}{Lema}[chapter]
+\newtheorem{akibat}{Akibat}[chapter]
+\newtheorem{proposisi}{Proposisi}[chapter]
+
+% English aliases (share counters with Indonesian versions)
+\newtheorem{definition}[definisi]{Definition}
+\newtheorem{theorem}[teorema]{Theorem}
+\newtheorem{lemma}[lema]{Lemma}
+\newtheorem{corollary}[akibat]{Corollary}
+\newtheorem{proposition}[proposisi]{Proposition}
+
+% Fix numbering to use Arabic chapter numbers (not Roman)
+\renewcommand{\thedefinisi}{\arabic{chapter}.\arabic{definisi}}
+\renewcommand{\theteorema}{\arabic{chapter}.\arabic{teorema}}
+\renewcommand{\thelema}{\arabic{chapter}.\arabic{lema}}
+\renewcommand{\theakibat}{\arabic{chapter}.\arabic{akibat}}
+\renewcommand{\theproposisi}{\arabic{chapter}.\arabic{proposisi}}
+
+% Indonesian proof name
+\renewcommand{\proofname}{Bukti}
+
 % \usepackage{cite}
 \usepackage{multirow}
 \usepackage{titlesec}
@@ -739,8 +775,9 @@
 % set page number style
 \AtBeginDocument{
     \fancyhf{}
-    \fancyhead[R]{\thepage}
+    \fancyfoot[C]{\thepage}% Front matter: bottom center
     \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
     \pagestyle{fancy}
     \setlength{\parindent}{1.25cm}
 }
@@ -775,9 +812,15 @@
 \titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titleformat*{\section}{\raggedright\normalfont\normalsize\bfseries}
-\titleformat*{\subsection}{\raggedright\normalfont\normalsize\bfseries}
-\titleformat*{\subsubsection}{\raggedright\normalfont\normalsize\bfseries}
+\titleformat{\section}
+    {\raggedright\normalfont\normalsize\bfseries\singlespacing}
+    {\thesection}{1em}{}
+\titleformat{\subsection}
+    {\raggedright\normalfont\normalsize\bfseries\singlespacing}
+    {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+    {\raggedright\normalfont\normalsize\bfseries\singlespacing}
+    {}{0em}{}
 
 
 % Starting the main matter	
@@ -785,6 +828,9 @@
     \clearpage
     \setcounter{page}{1}
     \pagenumbering{arabic}
+    \fancyhf{}
+    \fancyhead[R]{\thepage}% Main matter: top right
+    \renewcommand{\headrulewidth}{0pt}
     \onehalfspacing
     \nopagebreak
     \setlength{\parindent}{1.25cm}
