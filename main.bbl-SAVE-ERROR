@@ -16,5 +16,565 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{brauer2001}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8e52637ed79195840d066aca74adc6b5}{%
+           family={Brauer},
+           familyi={B\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3eba9c8c10668fb90385579124c6cc90}{%
+           family={Castillo-Chavez},
+           familyi={C\bibinithyphendelim C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag, Inc.}%
+      }
+      \strng{namehash}{34014b16e0e5ea8015b0d8930f46e2a1}
+      \strng{fullhash}{34014b16e0e5ea8015b0d8930f46e2a1}
+      \strng{fullhashraw}{34014b16e0e5ea8015b0d8930f46e2a1}
+      \strng{bibnamehash}{34014b16e0e5ea8015b0d8930f46e2a1}
+      \strng{authorbibnamehash}{34014b16e0e5ea8015b0d8930f46e2a1}
+      \strng{authornamehash}{34014b16e0e5ea8015b0d8930f46e2a1}
+      \strng{authorfullhash}{34014b16e0e5ea8015b0d8930f46e2a1}
+      \strng{authorfullhashraw}{34014b16e0e5ea8015b0d8930f46e2a1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mathematical Models in Population Biology and Epidemiology}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-1-4757-3516-1
+      \endverb
+    \endentry
+    \entry{cheney2001}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=59602fcee4ed2edfbf25e6609ebbae30}{%
+           family={Cheney},
+           familyi={C\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{59602fcee4ed2edfbf25e6609ebbae30}
+      \strng{fullhash}{59602fcee4ed2edfbf25e6609ebbae30}
+      \strng{fullhashraw}{59602fcee4ed2edfbf25e6609ebbae30}
+      \strng{bibnamehash}{59602fcee4ed2edfbf25e6609ebbae30}
+      \strng{authorbibnamehash}{59602fcee4ed2edfbf25e6609ebbae30}
+      \strng{authornamehash}{59602fcee4ed2edfbf25e6609ebbae30}
+      \strng{authorfullhash}{59602fcee4ed2edfbf25e6609ebbae30}
+      \strng{authorfullhashraw}{59602fcee4ed2edfbf25e6609ebbae30}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Analysis for Applied Mathematics}
+      \field{year}{2001}
+      \field{dateera}{ce}
+    \endentry
+    \entry{creswell1982}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=499f6872f850bcc86221eeb579023dec}{%
+           family={Creswell},
+           familyi={C\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc60b341e6c9651f6917c5058333c807}{%
+           family={Runquist},
+           familyi={R\bibinitperiod},
+           given={O.\bibnamedelimi A.},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01411a71bfb2104625aae6f4c9cf11b5}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{2}{}{%
+        {{hash=1d6db3a229ebeaaaa3f8a39d841fe521}{%
+           family={Padmawinata},
+           familyi={P\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0fba03069157c14fc9b252d5ff1a20ec}{%
+           family={Soediro},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bandung}%
+      }
+      \list{publisher}{1}{%
+        {Penerbit ITB}%
+      }
+      \strng{namehash}{2f023037e4b0679c619147209c2c90ce}
+      \strng{fullhash}{cf509a2b780d9a649c4ee1f2e0d5ab89}
+      \strng{fullhashraw}{cf509a2b780d9a649c4ee1f2e0d5ab89}
+      \strng{bibnamehash}{cf509a2b780d9a649c4ee1f2e0d5ab89}
+      \strng{authorbibnamehash}{cf509a2b780d9a649c4ee1f2e0d5ab89}
+      \strng{authornamehash}{2f023037e4b0679c619147209c2c90ce}
+      \strng{authorfullhash}{cf509a2b780d9a649c4ee1f2e0d5ab89}
+      \strng{authorfullhashraw}{cf509a2b780d9a649c4ee1f2e0d5ab89}
+      \strng{translatorbibnamehash}{ef2d95811cfd56f741bc32630bb92fab}
+      \strng{translatornamehash}{ef2d95811cfd56f741bc32630bb92fab}
+      \strng{translatorfullhash}{ef2d95811cfd56f741bc32630bb92fab}
+      \strng{translatorfullhashraw}{ef2d95811cfd56f741bc32630bb92fab}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Analisis Spektrum Senyawa Organik}
+      \field{year}{1982}
+    \endentry
+    \entry{dai1989}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe32e0371223bc47e27d530616ab888f}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag, Inc.}%
+      }
+      \strng{namehash}{fe32e0371223bc47e27d530616ab888f}
+      \strng{fullhash}{fe32e0371223bc47e27d530616ab888f}
+      \strng{fullhashraw}{fe32e0371223bc47e27d530616ab888f}
+      \strng{bibnamehash}{fe32e0371223bc47e27d530616ab888f}
+      \strng{authorbibnamehash}{fe32e0371223bc47e27d530616ab888f}
+      \strng{authornamehash}{fe32e0371223bc47e27d530616ab888f}
+      \strng{authorfullhash}{fe32e0371223bc47e27d530616ab888f}
+      \strng{authorfullhashraw}{fe32e0371223bc47e27d530616ab888f}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lecture Notes in Control and Information Sciences: Singular Control System}
+      \field{year}{1989}
+      \field{dateera}{ce}
+    \endentry
+    \entry{davis1995}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dd8ae9cd2bfee7bfee29218e45956d2c}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14099da386e5a796f0b2a5a95d8c5ab5}{%
+           family={Quigley},
+           familyi={Q\bibinitperiod},
+           given={M.\bibnamedelimi N.},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b015625428c3fa75239a34bfb0750a60}
+      \strng{fullhash}{b015625428c3fa75239a34bfb0750a60}
+      \strng{fullhashraw}{b015625428c3fa75239a34bfb0750a60}
+      \strng{bibnamehash}{b015625428c3fa75239a34bfb0750a60}
+      \strng{authorbibnamehash}{b015625428c3fa75239a34bfb0750a60}
+      \strng{authornamehash}{b015625428c3fa75239a34bfb0750a60}
+      \strng{authorfullhash}{b015625428c3fa75239a34bfb0750a60}
+      \strng{authorfullhashraw}{b015625428c3fa75239a34bfb0750a60}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Educ.}
+      \field{title}{Liquid Chromatographic Determination of UV Absorbens in Sunscreen}
+      \field{volume}{72}
+      \field{year}{1995}
+      \field{pages}{279\bibrangedash 281}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1021/ed072p279
+      \endverb
+    \endentry
+    \entry{dewar1985}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9a33bd62e7c6b02f7f47864e98f7e6c6}{%
+           family={Dewar},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi J.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86e132c89bf66c9a7476c992d9f26570}{%
+           family={Zoeblish},
+           familyi={Z\bibinitperiod},
+           given={E.\bibnamedelimi G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b102b67661f2b879d72d3023b658843a}{%
+           family={Healy},
+           familyi={H\bibinitperiod},
+           given={E.\bibnamedelimi F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd19885174679fbc7048f98f7f52a92}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{50a11331a729a37f95dc477a5f32e313}
+      \strng{fullhash}{67d13d4a2323d3c5ac22955d1e3a7343}
+      \strng{fullhashraw}{67d13d4a2323d3c5ac22955d1e3a7343}
+      \strng{bibnamehash}{67d13d4a2323d3c5ac22955d1e3a7343}
+      \strng{authorbibnamehash}{67d13d4a2323d3c5ac22955d1e3a7343}
+      \strng{authornamehash}{50a11331a729a37f95dc477a5f32e313}
+      \strng{authorfullhash}{67d13d4a2323d3c5ac22955d1e3a7343}
+      \strng{authorfullhashraw}{67d13d4a2323d3c5ac22955d1e3a7343}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Am. Chem. Soc.}
+      \field{title}{AM1: A New General Purpose Quantum Mechanical Molecular Model}
+      \field{volume}{107}
+      \field{year}{1985}
+      \field{pages}{3902\bibrangedash 3905}
+      \range{pages}{4}
+    \endentry
+    \entry{finnen1987}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9b532792926119b4e8d46a33b9ab094b}{%
+           family={Finnen},
+           familyi={F\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b532792926119b4e8d46a33b9ab094b}
+      \strng{fullhash}{9b532792926119b4e8d46a33b9ab094b}
+      \strng{fullhashraw}{9b532792926119b4e8d46a33b9ab094b}
+      \strng{bibnamehash}{9b532792926119b4e8d46a33b9ab094b}
+      \strng{authorbibnamehash}{9b532792926119b4e8d46a33b9ab094b}
+      \strng{authornamehash}{9b532792926119b4e8d46a33b9ab094b}
+      \strng{authorfullhash}{9b532792926119b4e8d46a33b9ab094b}
+      \strng{authorfullhashraw}{9b532792926119b4e8d46a33b9ab094b}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Pharmacol. Skin}
+      \field{number}{4}
+      \field{title}{Skin Metabolism by Oxydation and Conjugation}
+      \field{volume}{72}
+      \field{year}{1987}
+      \field{pages}{69\bibrangedash 88}
+      \range{pages}{20}
+    \endentry
+    \entry{husna2002}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=60c8de72f062411913f288a58ef25e41}{%
+           family={Husna},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Jurusan Matematika FMIPA UGM}%
+      }
+      \list{location}{1}{%
+        {Yogyakarta}%
+      }
+      \strng{namehash}{60c8de72f062411913f288a58ef25e41}
+      \strng{fullhash}{60c8de72f062411913f288a58ef25e41}
+      \strng{fullhashraw}{60c8de72f062411913f288a58ef25e41}
+      \strng{bibnamehash}{60c8de72f062411913f288a58ef25e41}
+      \strng{authorbibnamehash}{60c8de72f062411913f288a58ef25e41}
+      \strng{authornamehash}{60c8de72f062411913f288a58ef25e41}
+      \strng{authorfullhash}{60c8de72f062411913f288a58ef25e41}
+      \strng{authorfullhashraw}{60c8de72f062411913f288a58ef25e41}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sistem Linear dan Beberapa Aplikasinya}
+      \field{type}{Skripsi}
+      \field{year}{2002}
+    \endentry
+    \entry{anonim1992}{book}{}{}
+      \list{location}{1}{%
+        {Tulsa}%
+      }
+      \list{publisher}{1}{%
+        {Autodesk Inc.}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Hyperchem™ Release 3 for Windows: Manual}
+      \field{year}{1992}
+      \field{dateera}{ce}
+    \endentry
+    \entry{jumina2001}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=80b075c0e314789d099eb67eac87f448}{%
+           family={Jumina},
+           familyi={J\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=e8077b2de986cc80d5c324e742adf29a}{%
+           family={Tahir},
+           familyi={T\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Indonesian Toray Scientific Foundation}%
+      }
+      \list{location}{1}{%
+        {Jakarta}%
+      }
+      \strng{namehash}{17036fe2b5cb3d03cdd8db217d734aad}
+      \strng{fullhash}{17036fe2b5cb3d03cdd8db217d734aad}
+      \strng{fullhashraw}{17036fe2b5cb3d03cdd8db217d734aad}
+      \strng{bibnamehash}{17036fe2b5cb3d03cdd8db217d734aad}
+      \strng{authorbibnamehash}{17036fe2b5cb3d03cdd8db217d734aad}
+      \strng{authornamehash}{17036fe2b5cb3d03cdd8db217d734aad}
+      \strng{authorfullhash}{17036fe2b5cb3d03cdd8db217d734aad}
+      \strng{authorfullhashraw}{17036fe2b5cb3d03cdd8db217d734aad}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Synthesis of New C-9154 Antibiotics Based on Quantitative Structure-Activity Relationship}
+      \field{type}{Laporan Penelitian}
+      \field{year}{2001}
+    \endentry
+    \entry{lee1989}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b983cbc36d3e076f7df16f1c3a94a1bb}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={P.\bibnamedelimi Y.},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific}%
+      }
+      \strng{namehash}{b983cbc36d3e076f7df16f1c3a94a1bb}
+      \strng{fullhash}{b983cbc36d3e076f7df16f1c3a94a1bb}
+      \strng{fullhashraw}{b983cbc36d3e076f7df16f1c3a94a1bb}
+      \strng{bibnamehash}{b983cbc36d3e076f7df16f1c3a94a1bb}
+      \strng{authorbibnamehash}{b983cbc36d3e076f7df16f1c3a94a1bb}
+      \strng{authornamehash}{b983cbc36d3e076f7df16f1c3a94a1bb}
+      \strng{authorfullhash}{b983cbc36d3e076f7df16f1c3a94a1bb}
+      \strng{authorfullhashraw}{b983cbc36d3e076f7df16f1c3a94a1bb}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lanzhou Lectures on Henstock Integration}
+      \field{year}{1989}
+      \field{dateera}{ce}
+    \endentry
+    \entry{lee2000}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b983cbc36d3e076f7df16f1c3a94a1bb}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={P.\bibnamedelimi Y.},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=269b1cbc5497e1d317c0b46e177e6c23}{%
+           family={Výborný},
+           familyi={V\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{2a4571bb7b928f6d3d3cd704cb23b160}
+      \strng{fullhash}{2a4571bb7b928f6d3d3cd704cb23b160}
+      \strng{fullhashraw}{2a4571bb7b928f6d3d3cd704cb23b160}
+      \strng{bibnamehash}{2a4571bb7b928f6d3d3cd704cb23b160}
+      \strng{authorbibnamehash}{2a4571bb7b928f6d3d3cd704cb23b160}
+      \strng{authornamehash}{2a4571bb7b928f6d3d3cd704cb23b160}
+      \strng{authorfullhash}{2a4571bb7b928f6d3d3cd704cb23b160}
+      \strng{authorfullhashraw}{2a4571bb7b928f6d3d3cd704cb23b160}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Integral: An Easy Approach after Kurzweil and Henstock}
+      \field{year}{2000}
+      \field{dateera}{ce}
+    \endentry
+    \entry{leung2000}{online}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ef3f5630f7827bebc7062e3d839091a9}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=059d68273d9db0bd3d40e8e646202240}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8213ee63f533adc813512f0572151f1e}
+      \strng{fullhash}{8213ee63f533adc813512f0572151f1e}
+      \strng{fullhashraw}{8213ee63f533adc813512f0572151f1e}
+      \strng{bibnamehash}{8213ee63f533adc813512f0572151f1e}
+      \strng{authorbibnamehash}{8213ee63f533adc813512f0572151f1e}
+      \strng{authornamehash}{8213ee63f533adc813512f0572151f1e}
+      \strng{authorfullhash}{8213ee63f533adc813512f0572151f1e}
+      \strng{authorfullhashraw}{8213ee63f533adc813512f0572151f1e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{2 May 2000}
+      \field{title}{Functions of Baire Class One}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2007}
+      \field{year}{2000}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.arXiv.math.CA/0005013v1
+      \endverb
+      \verb{url}
+      \verb http://www.arXiv.math.CA/0005013v1
+      \endverb
+    \endentry
+    \entry{salmah2006}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dc7aeeb5dab0a8e4740d229b502c2058}{%
+           family={Salmah},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc7aeeb5dab0a8e4740d229b502c2058}
+      \strng{fullhash}{dc7aeeb5dab0a8e4740d229b502c2058}
+      \strng{fullhashraw}{dc7aeeb5dab0a8e4740d229b502c2058}
+      \strng{bibnamehash}{dc7aeeb5dab0a8e4740d229b502c2058}
+      \strng{authorbibnamehash}{dc7aeeb5dab0a8e4740d229b502c2058}
+      \strng{authornamehash}{dc7aeeb5dab0a8e4740d229b502c2058}
+      \strng{authorfullhash}{dc7aeeb5dab0a8e4740d229b502c2058}
+      \strng{authorfullhashraw}{dc7aeeb5dab0a8e4740d229b502c2058}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Prosiding Konferensi Nasional Matematika XIII UNNES}
+      \field{note}{24-27 Juli 2006}
+      \field{title}{Aplikasi Permainan Dinamis Linear Kuadratis Sistem Deskriptor pada Interaksi Fiskal di EMU}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{815\bibrangedash 821}
+      \range{pages}{7}
+    \endentry
+    \entry{wang2003}{patent}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2ca38ebc0e0cb8064a936205d2da287f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1105a84de81a7bd37527969d7c7eeafb}{%
+           family={Owen},
+           familyi={O\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0165bc010d194632b95641bfd8c0359c}{%
+           family={Bender},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9403c06e8c3e03a59558568985d6de3d}
+      \strng{fullhash}{546bc1e8672ce453393e84315f6989b2}
+      \strng{fullhashraw}{546bc1e8672ce453393e84315f6989b2}
+      \strng{bibnamehash}{546bc1e8672ce453393e84315f6989b2}
+      \strng{authorbibnamehash}{546bc1e8672ce453393e84315f6989b2}
+      \strng{authornamehash}{9403c06e8c3e03a59558568985d6de3d}
+      \strng{authorfullhash}{546bc1e8672ce453393e84315f6989b2}
+      \strng{authorfullhashraw}{546bc1e8672ce453393e84315f6989b2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{US Patent}
+      \field{number}{621139}
+      \field{title}{Antiviral Azaindole Derivatives as Antibiotics}
+      \field{year}{2003}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

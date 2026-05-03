@@ -64,7 +64,7 @@
 %======================================
 \LoadClass[12pt, a4paper, oneside]{report}  % this class is based on the report class
 \usepackage{geometry}% easy layouting
-%\usepackage{hyperref}% hyperlink
+\usepackage{hyperref}% hyperlink
 \usepackage{tocloft}% edit font toc
 \usepackage{fancyhdr}% page number
 \usepackage[cmex10]{amsmath}
@@ -73,13 +73,13 @@
 
 % Theorem style with italic body (per FMIPA guidelines)
 \newtheoremstyle{fmipastyle}%
-    {12pt}{12pt}%       % space above / below
-    {\itshape}%          % body font: italic
-    {}%                  % indent
-    {\bfseries}%         % head font: bold
-    {.}%                 % punctuation after head
-    { }%                 % space after head
-    {}%                  % head spec
+{12pt}{12pt}%       % space above / below
+{\itshape}%          % body font: italic
+{}%                  % indent
+{\bfseries}%         % head font: bold
+{.}%                 % punctuation after head
+{ }%                 % space after head
+{}%                  % head spec
 
 \theoremstyle{fmipastyle}
 \newtheorem{definisi}{Definisi}[chapter]
@@ -129,7 +129,7 @@
 \captionsetup[table]{font={bf,singlespacing}} % bold only for tables
 \captionsetup[figure]{font=singlespacing} % normal font for figures
 \usepackage{subcaption} % subfigure support
-\usepackage[bookmarks=true,hidelinks,bookmarksnumbered]{hyperref}
+% \usepackage[bookmarks=true,hidelinks,bookmarksnumbered]{hyperref}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \usepackage{pgf-pie}
@@ -502,10 +502,10 @@
                         \iftoggle{lang}{Pembimbing I}{Supervisor I}
 
                         \ifnum\value{spv}>1
-                            \vspace{\dimexpr 12pt * 3 * 150 / 100\relax}
+                        \vspace{\dimexpr 12pt * 3 * 150 / 100\relax}
 
-                            \getsupervisor{2}{1} \\
-                            \iftoggle{lang}{Pembimbing II}{Supervisor II}
+                        \getsupervisor{2}{1} \\
+                        \iftoggle{lang}{Pembimbing II}{Supervisor II}
                         \fi
 
                     \end{singlespace}
@@ -819,14 +819,14 @@
 \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titleformat{\section}
-    {\raggedright\normalfont\normalsize\bfseries\singlespacing}
-    {\thesection}{1em}{}
+{\raggedright\normalfont\normalsize\bfseries\singlespacing}
+{\thesection}{1em}{}
 \titleformat{\subsection}
-    {\raggedright\normalfont\normalsize\bfseries\singlespacing}
-    {\thesubsection}{1em}{}
+{\raggedright\normalfont\normalsize\bfseries\singlespacing}
+{\thesubsection}{1em}{}
 \titleformat{\subsubsection}
-    {\raggedright\normalfont\normalsize\bfseries\singlespacing}
-    {}{0em}{}
+{\raggedright\normalfont\normalsize\bfseries\singlespacing}
+{}{0em}{}
 
 
 % Starting the main matter	
