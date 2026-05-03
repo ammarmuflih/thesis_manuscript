@@ -122,10 +122,12 @@
 \usepackage{tabularx}
 \usepackage[
     labelsep=period,
-    font={bf,singlespacing},
+    font=singlespacing,
     figurewithin=none,
     tablewithin=none
-]{caption} % bold captions, period separator, single spacing
+]{caption} % period separator, single spacing
+\captionsetup[table]{font={bf,singlespacing}} % bold only for tables
+\captionsetup[figure]{font=singlespacing} % normal font for figures
 \usepackage{subcaption} % subfigure support
 \usepackage[bookmarks=true,hidelinks,bookmarksnumbered]{hyperref}
 \usepackage{tikz}
