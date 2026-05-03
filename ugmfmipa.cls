@@ -494,15 +494,12 @@
                         \getsupervisor{1}{1}\\
                         Pembimbing I
 
-                        \ifdefempty{\@secondsupervisor}
-                        {
-                        }
-                        {
+                        \ifnum\value{spv}>1
                             \vspace{\dimexpr 12pt * 3 * 150 / 100\relax}
 
                             \getsupervisor{2}{1} \\
                             Pembimbing II
-                        }
+                        \fi
 
                     \end{singlespace}
                 \end{center}
