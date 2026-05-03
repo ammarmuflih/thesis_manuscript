@@ -8,7 +8,7 @@
 % --- 1. LOAD PAKET BIBLATEX ---
 \RequirePackage[
     backend=biber,
-    style=ext-authoryear, % Sistem Harvard (Nama-Tahun)
+    style=authoryear, % Sistem Harvard (Nama-Tahun)
     maxcitenames=2,       % Di teks: max 2 nama. Jika >2 jadi et al
     mincitenames=1,
     maxbibnames=99,       % Di Daftar Pustaka: Tulis SEMUA nama (Dilarang et al.)
@@ -56,26 +56,15 @@
 \DeclareNameAlias{default}{family-given}
 \DeclareNameAlias{author}{family-given}
 
-% C. Jika tidak ada penulis, tampilkan "Anonim"
-% Override macro author agar menampilkan "Anonim" jika author kosong
+% C. Author macro: tampilkan "Anonim" jika kosong + inject tahun setelah nama
+% Root cause: biblatex authoryear style's date+extradate macro is unreliable
+% (biber does not populate labelyear). Solution: print year directly in author macro.
 \renewbibmacro*{author}{%
     \ifnameundef{author}
     {\printtext{Anonim}}
     {\printnames{author}}%
+    \iffieldundef{year}{}{\setunit{\addcomma\space}\printfield{year}}%
 }
-
-% D. Tahun harus muncul setelah nama penulis TANPA kurung
-% authoryear.bbx uses \printtext[parens]{\printlabeldateextra}
-% Step 1: Override the date+extradate macro to print year without parens
-\renewbibmacro*{date+extradate}{%
-    \iffieldundef{labelyear}
-    {}
-    {\setunit{\addcomma\space}%
-     \printlabeldateextra}%
-}
-% Step 2: Suppress duplicate date from issue+date (mergedate handles this)
-\renewbibmacro*{issue+date}{}
-% Step 3: Delimiter between name and year
 \DeclareDelimFormat[bib]{nameyeardelim}{\addcomma\space}
 
 % E. Tanda Baca: koma sebagai pemisah antar elemen
