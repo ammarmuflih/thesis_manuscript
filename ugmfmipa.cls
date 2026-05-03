@@ -826,9 +826,8 @@
     \clearpage
     \setcounter{page}{1}
     \pagenumbering{arabic}
-    \fancyhf{}
-    \fancyhead[R]{\thepage}% Main matter: top right
-    \renewcommand{\headrulewidth}{0pt}
+    % Keep page number at bottom center (same as front matter)
+    % No need to change fancyhdr settings
     \onehalfspacing
     \nopagebreak
     \setlength{\parindent}{1.25cm}
