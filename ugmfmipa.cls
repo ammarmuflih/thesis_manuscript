@@ -102,8 +102,8 @@
 \renewcommand{\theakibat}{\arabic{chapter}.\arabic{akibat}}
 \renewcommand{\theproposisi}{\arabic{chapter}.\arabic{proposisi}}
 
-% Indonesian proof name
-\renewcommand{\proofname}{Bukti}
+% Proof name (language-aware)
+\iftoggle{lang}{\renewcommand{\proofname}{Bukti}}{\renewcommand{\proofname}{Proof}}
 
 % \usepackage{cite}
 \usepackage{multirow}
@@ -159,6 +159,7 @@
     % define new commands in english
     \newcommand{\listappendixname}{LIST OF APPENDICES}%
     \newcommand{\nomenclaturename}{NOMENCLATURE AND ABBREVIATION}%
+    \newcommand{\acknowledgmentname}{ACKNOWLEDGMENT}%
     \newcommand{\approvalpage}{ENDORSEMENT PAGE}
     \newcommand{\statementname}{STATEMENT}
     \newcommand{\dedicationpage}{PAGE OF DEDICATION}
@@ -337,7 +338,7 @@
         \pagenumbering{roman}
         \begin{center}
             \begin{singlespacing}
-                \MakeUppercase{\normalfont\bfseries Proposal Tesis}\\
+                \MakeUppercase{\normalfont\bfseries \iftoggle{lang}{Proposal Tesis}{Thesis Proposal}}\\
                 \vspace{1.5cm}
                 \MakeUppercase{\normalfont\bfseries\@titleind}\\
                 \vspace{0.5em}
@@ -431,7 +432,7 @@
                 NIP. \@programcoorNIP \\
                 \vspace{0.5cm}
 
-                \iftoggle{lang}{Mengetahui,\\}{}
+                \iftoggle{lang}{Mengetahui,\\}{Acknowledged,\\}
                 \iftoggle{lang}
                 {Ketua Departemen/Wakil Penanggung Jawab Program Studi}
                 {Head of Department}\\
@@ -461,24 +462,24 @@
         \thispagestyle{fancy}% Use fancy style (footer center for front matter)
         \begin{center}
             \begin{singlespacing}
-                \MakeUppercase{\normalfont\large\textbf{Halaman Persetujuan Proposal Tesis}}\\
+                \MakeUppercase{\normalfont\large\textbf{\iftoggle{lang}{Halaman Persetujuan Proposal Tesis}{Thesis Proposal Approval Page}}}\\
                 \vspace{1em}
                 \begin{flushleft}
                     \begin{tabularx}{\linewidth}{p{3.5cm} c X}
-                        Judul Tesis & : & \@titleind \\
+                        \iftoggle{lang}{Judul Tesis}{Thesis Title} & : & \iftoggle{lang}{\@titleind}{\@titleeng} \\
                     \end{tabularx}
                 \end{flushleft}
                 \begin{center}
                     \begin{singlespace}
 
-                        \textbf{Diusulkan oleh}\par
+                        \textbf{\iftoggle{lang}{Diusulkan oleh}{Proposed by}}\par
 
                     \end{singlespace}
                 \end{center}
                 \begin{flushleft}
                     \begin{tabularx}{\linewidth}{p{3.5cm} c X}
-                        Nama Mahasiswa & : & \@authorName \\
-                        NIM            & : & \@authorID   \\
+                        \iftoggle{lang}{Nama Mahasiswa}{Student Name} & : & \@authorName \\
+                        \iftoggle{lang}{NIM}{Student ID}              & : & \@authorID   \\
                     \end{tabularx}
                 \end{flushleft}
                 \begin{center}
@@ -486,25 +487,25 @@
 
                         \vspace{\dimexpr 12pt * 150 / 100\relax}
 
-                        Telah disetujui\\
+                        \iftoggle{lang}{Telah disetujui}{Has been approved}\\
                         \vspace{12pt}
 
-                        pada tanggal \@examdate\\
+                        \iftoggle{lang}{pada tanggal}{on} \@examdate\\
 
                         \vspace{\dimexpr 12pt * 2 * 150 / 100\relax}
 
-                        Pembimbing\\
+                        \iftoggle{lang}{Pembimbing}{Supervisor}\\
 
                         \vspace{\dimexpr 12pt * 3 * 150 / 100\relax}
 
                         \getsupervisor{1}{1}\\
-                        Pembimbing I
+                        \iftoggle{lang}{Pembimbing I}{Supervisor I}
 
                         \ifnum\value{spv}>1
                             \vspace{\dimexpr 12pt * 3 * 150 / 100\relax}
 
                             \getsupervisor{2}{1} \\
-                            Pembimbing II
+                            \iftoggle{lang}{Pembimbing II}{Supervisor II}
                         \fi
 
                     \end{singlespace}
@@ -514,7 +515,7 @@
             \end{singlespacing}
         \end{center}
         \phantomsection
-        \addcontentsline{toc}{chapter}{HALAMAN PERSETUJUAN PROPOSAL TESIS}
+        \addcontentsline{toc}{chapter}{\iftoggle{lang}{HALAMAN PERSETUJUAN PROPOSAL TESIS}{THESIS PROPOSAL APPROVAL PAGE}}
     }
 }
 
@@ -660,7 +661,7 @@
     \begin{singlespace}
         \selectlanguage{english}
         \input{#1}
-        \selectlanguage{bahasa} % Kembalikan ke bahasa indonesia setelah selesai
+        \iftoggle{lang}{\selectlanguage{bahasa}}{\selectlanguage{english}} % Restore document language
     \end{singlespace}
 }
 
@@ -882,7 +883,7 @@
     \renewcommand\thesubsection {L.\@arabic\c@section.\@arabic\c@subsection}
 
     % Add to TOC
-    \addcontentsline{toc}{chapter}{LAMPIRAN}
+    \addcontentsline{toc}{chapter}{\iftoggle{lang}{LAMPIRAN}{APPENDIX}}
     %\addcontentsline{toc}{chapter}{\protect\setcounter{tocdepth}{1}\protect\appendixname}
     %\addcontentsline{toc}{chapter}{\protect\setcounter{tocdepth}{1}\protect\appendixname}
     %\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
