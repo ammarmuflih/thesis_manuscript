@@ -375,8 +375,8 @@
     }
     \newcommand{\printendorsement}{
         %	\chapter*{\endorsementname}%
-        \fancyhf{}
-        \fancyfoot[C]{\thepage}
+        \newpage
+        \thispagestyle{fancy}% Use fancy style (footer center for front matter)
         \begin{center}
             \begin{singlespacing}
                 \textbf{\iftoggle{lang}{TESIS}{THESIS}}\\
@@ -452,8 +452,8 @@
     }
     \newcommand{\printendorsement}{
         %	\chapter*{\endorsementname}%
-        \fancyhf{}
-        \fancyfoot[C]{\thepage}
+        \newpage
+        \thispagestyle{fancy}% Use fancy style (footer center for front matter)
         \begin{center}
             \begin{singlespacing}
                 \MakeUppercase{\normalfont\large\textbf{Halaman Pengesahan Usulan Penelitian S2}}\\
