@@ -64,8 +64,6 @@
 \LoadClass[12pt, a4paper, oneside]{report}  % this class is based on the report class
 \usepackage{geometry}% easy layouting
 %\usepackage{hyperref}% hyperlink
-\usepackage{subcaption} % subfigure
-\usepackage[figurewithin=none]{caption}
 \usepackage{tocloft}% edit font toc
 \usepackage{fancyhdr}% page number
 \usepackage[cmex10]{amsmath}
@@ -85,7 +83,13 @@
 \usepackage{longtable}
 \usepackage{enumitem}
 \usepackage{tabularx}
-\usepackage[labelsep=period]{caption} % use period as label separator
+\usepackage[
+    labelsep=period,
+    font={bf,singlespacing},
+    figurewithin=none,
+    tablewithin=none
+]{caption} % bold captions, period separator, single spacing
+\usepackage{subcaption} % subfigure support
 \usepackage[bookmarks=true,hidelinks,bookmarksnumbered]{hyperref}
 \usepackage{tikz}
 \usepackage{pgfplots}
@@ -750,7 +754,7 @@
 }
 
 % depth of toc
-\setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{2}
 % set numbering style
 \renewcommand \thepart {\@Roman\c@part}
 \renewcommand \thechapter {\@Roman\c@chapter}
@@ -760,7 +764,7 @@
 % set figure, table, and equation style
 \@addtoreset {equation}{chapter}
 \renewcommand\theequation
-{\ifnum \c@chapter>\z@ \@arabic\c@chapter-\fi \@arabic\c@equation}
+{\ifnum \c@chapter>\z@ \@arabic\c@chapter.\fi \@arabic\c@equation}
 \renewcommand \thefigure
 {\ifnum \c@chapter>\z@ \@arabic\c@chapter.\fi \@arabic\c@figure}
 \renewcommand \thetable
