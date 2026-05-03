@@ -66,9 +66,17 @@
 
 % D. Tahun harus muncul setelah nama penulis TANPA kurung
 % authoryear.bbx uses \printtext[parens]{\printlabeldateextra}
-% Override: redefine parens wrapper to remove parentheses in bibliography
+% Step 1: Override the date+extradate macro to print year without parens
+\renewbibmacro*{date+extradate}{%
+    \iffieldundef{labelyear}
+    {}
+    {\setunit{\addcomma\space}%
+     \printlabeldateextra}%
+}
+% Step 2: Suppress duplicate date from issue+date (mergedate handles this)
+\renewbibmacro*{issue+date}{}
+% Step 3: Delimiter between name and year
 \DeclareDelimFormat[bib]{nameyeardelim}{\addcomma\space}
-\renewcommand{\mkbibparens}[1]{#1}
 
 % E. Tanda Baca: koma sebagai pemisah antar elemen
 \renewcommand*{\newunitpunct}{\addcomma\space}
