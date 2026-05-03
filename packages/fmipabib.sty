@@ -65,12 +65,10 @@
 }
 
 % D. Tahun harus muncul setelah nama penulis TANPA kurung
-% ext-authoryear style menampilkan tahun dalam kurung: Author (2001)
-% Override: hapus kurung dari tahun di daftar pustaka
-% Redefine \mkbibbrackets to not add brackets in bibliography
-\AtBeginBibliography{%
-    \renewcommand{\mkbibbrackets}[1]{##1}%
-}
+% authoryear.bbx uses \printtext[parens]{\printlabeldateextra}
+% Override: redefine parens wrapper to remove parentheses in bibliography
+\DeclareDelimFormat[bib]{nameyeardelim}{\addcomma\space}
+\renewcommand{\mkbibparens}[1]{#1}
 
 % E. Tanda Baca: koma sebagai pemisah antar elemen
 \renewcommand*{\newunitpunct}{\addcomma\space}
