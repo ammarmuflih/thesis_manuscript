@@ -23,7 +23,7 @@
 \RequirePackage{etoolbox}% conditional statement
 \RequirePackage{indentfirst}
 \RequirePackage{setspace}
-\RequirePackage{tgtermes}% font: TeX Gyre Termes (Liberation Serif equivalent for pdfLaTeX)
+\RequirePackage{times}% font: Times (stable, widely available)
 \RequirePackage[T1]{fontenc}% proper font encoding
 \RequirePackage{graphicx}
 \RequirePackage{calc}%Simple arithmetic lib
