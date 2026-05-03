@@ -32,28 +32,17 @@
 % --- 2. PENGATURAN BAHASA & ISTILAH ---
 
 % Biblatex tidak mengenali 'bahasa', fallback ke 'english'.
-% Maka kita override string English agar sesuai format FMIPA UGM (Bahasa Indonesia).
-% Jika dokumen dalam mode English, string akan di-override ulang di \AtBeginDocument.
+% Override string English agar sesuai format FMIPA UGM terbaru.
+% Format terbaru menggunakan '&' sebagai penghubung penulis terakhir.
 \DefineBibliographyStrings{english}{%
     andothers = {\mkbibemph{et\addabbrvspace al\adddot}},%
-    and       = {dan},%
+    and       = {\&},%
     pages     = {},%
     page      = {}%
 }
 
-% Override kembali jika dokumen dalam mode English
-\AtEndPreamble{%
-    \ifdef{\iftoggle}{}{}% safety check
-    \iftoggle{lang}{}{%
-        % English mode: restore "and" and keep pages empty (FMIPA style)
-        \DefineBibliographyStrings{english}{%
-            andothers = {\mkbibemph{et\addabbrvspace al\adddot}},%
-            and       = {and},%
-            pages     = {},%
-            page      = {}%
-        }%
-    }%
-}
+% Format DOI: tampilkan sebagai "doi: http://doi.org/..."
+\DeclareFieldFormat{doi}{doi:\space\url{https://doi.org/#1}}
 
 % --- 3. FORMAT DAFTAR PUSTAKA ---
 
