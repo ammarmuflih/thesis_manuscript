@@ -301,7 +301,8 @@
         \begin{center}
             \begin{singlespacing}
                 \MakeUppercase{\normalfont\bfseries\@titleind}\\
-                \MakeUppercase{\normalfont\bfseries\@titleeng}\\
+                \vspace{0.5em}
+                {\normalfont\itshape\@titleeng}\\
                 \vspace{1cm}
                 \vfill
                 \includegraphics[width=5.5cm]{#1}
@@ -337,6 +338,8 @@
                 \MakeUppercase{\normalfont\bfseries Usulan Penelitian S2}\\
                 \vspace{1.5cm}
                 \MakeUppercase{\normalfont\bfseries\@titleind}\\
+                \vspace{0.5em}
+                {\normalfont\itshape\@titleeng}\\
                 \vspace{1cm}
                 \vfill
                 \includegraphics[width=5.5cm]{#1}
