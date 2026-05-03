@@ -740,6 +740,15 @@
     \pagestyle{fancy}
     \setlength{\parindent}{1.25cm}
 }
+
+% Configure plain style for chapter first pages
+\fancypagestyle{plain}{%
+    \fancyhf{}%
+    \fancyfoot[C]{\thepage}%
+    \renewcommand{\headrulewidth}{0pt}%
+    \renewcommand{\footrulewidth}{0pt}%
+}
+
 % depth of toc
 \setcounter{secnumdepth}{3}
 % set numbering style
