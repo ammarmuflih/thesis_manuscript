@@ -23,8 +23,8 @@
 \RequirePackage{etoolbox}% conditional statement
 \RequirePackage{indentfirst}
 \RequirePackage{setspace}
-\RequirePackage{times}% font
-\RequirePackage[T1]{fontenc}% quotation
+\RequirePackage{tgtermes}% font: TeX Gyre Termes (Liberation Serif equivalent for pdfLaTeX)
+\RequirePackage[T1]{fontenc}% proper font encoding
 \RequirePackage{graphicx}
 \RequirePackage{calc}%Simple arithmetic lib
 \RequirePackage{pdfpages} %include pdf file in latex
