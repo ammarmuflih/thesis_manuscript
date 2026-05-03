@@ -235,10 +235,10 @@
 \newcommand{\@university}{Universitas Gadjah Mada}
 \newcommand{\@facultyIna}{Fakultas Matematika dan Ilmu Pengetahuan Alam}
 \newcommand{\@facultyEng}{Faculty of Mathematics and Natural Sciences}
-\newcommand{\@departmentIna}{Departemen Ilmu Komputer dan Elektronika}
-\newcommand{\@departmentEng}{Department of Computer Science and Electronics}
-\newcommand{\@graduateIna}{Magister Ilmu Komputer}
-\newcommand{\@graduateEng}{Master of Computer Science}
+\newcommand{\@jurusanIna}{Departemen Ilmu Komputer dan Elektronika}
+\newcommand{\@jurusanEng}{Department of Computer Science and Electronics}
+\newcommand{\@prodiIna}{Magister Ilmu Komputer}
+\newcommand{\@prodiEng}{Master of Computer Science}
 \newcommand*{\major}[1]{\newcommand{\@major}{#1}}
 \newcommand*{\departmenthead}[2]{
     \newcommand{\@depheadName}{#1}
@@ -263,7 +263,7 @@
                 \MakeUppercase{\normalfont\bfseries\@titleeng}\\
                 \vspace{1cm}
                 \vfill
-                \includegraphics[width=0.5\textwidth]{#1}
+                \includegraphics[width=5.5cm]{#1}
                 \vfill
                 \iftoggle{lang}
                 {\normalfont\bfseries Oleh:}
@@ -273,8 +273,8 @@
                 \vfill
                 \vspace{0.4em}
                 \textbf{
-                    \iftoggle{lang}{\MakeUppercase{Program \@graduateIna}}{\MakeUppercase{\@graduateEng Program}} \\
-                    \iftoggle{lang}{\MakeUppercase{ \@departmentIna}}{\MakeUppercase{\@departmentEng}} \\
+                    \iftoggle{lang}{\MakeUppercase{Program Studi \@prodiIna}}{\MakeUppercase{\@prodiEng Program}} \\
+                    \iftoggle{lang}{\MakeUppercase{\@jurusanIna}}{\MakeUppercase{\@jurusanEng}} \\
                     \iftoggle{lang}{\MakeUppercase{\@facultyIna}}{\MakeUppercase{\@facultyEng}} \\
                     \MakeUppercase{\@university} \\
                     \MakeUppercase{\@city} \\
@@ -298,7 +298,7 @@
                 \MakeUppercase{\normalfont\bfseries\@titleind}\\
                 \vspace{1cm}
                 \vfill
-                \includegraphics[width=0.5\textwidth]{#1}
+                \includegraphics[width=5.5cm]{#1}
                 \vfill
                 \iftoggle{lang}
                 {\normalfont\bfseries Oleh:}
@@ -308,8 +308,8 @@
                 \vfill
                 \vspace{0.4em}
                 \textbf{
-                    \iftoggle{lang}{\MakeUppercase{Program \@graduateIna}}{\MakeUppercase{\@graduateEng Program}} \\
-                    \iftoggle{lang}{\MakeUppercase{ \@departmentIna}}{\MakeUppercase{\@departmentEng}} \\
+                    \iftoggle{lang}{\MakeUppercase{Program Studi \@prodiIna}}{\MakeUppercase{\@prodiEng Program}} \\
+                    \iftoggle{lang}{\MakeUppercase{\@jurusanIna}}{\MakeUppercase{\@jurusanEng}} \\
                     \iftoggle{lang}{\MakeUppercase{\@facultyIna}}{\MakeUppercase{\@facultyEng}} \\
                     \MakeUppercase{\@university} \\
                     \MakeUppercase{\@city} \\
@@ -389,7 +389,7 @@
                 \iftoggle{lang}
                 {Ketua Departemen/Wakil Penanggung Jawab Program Studi}
                 {Head of Department}\\
-                \iftoggle{lang}{\@departmentIna}{\@departmentEng}\\
+                \iftoggle{lang}{\@jurusanIna}{\@jurusanEng}\\
                 \vspace{1.3cm}
                 \textbf{\underline{\@depheadName}}\\
                 NIP. \@depheadNIP \\
