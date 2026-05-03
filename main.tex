@@ -81,25 +81,18 @@
 %\printendorsementpdf
 %\printendorsementjpg{sample/scanned-endorsement.jpg}
 
-%---- DEDICATION PAGE ----
-\cleardoublepage \phantomsection
-\chapterstatement{contents/statement/statement}
+%---- OPTIONAL: STATEMENT PAGE (uncomment if needed) ----
+% \cleardoublepage \phantomsection
+% \chapterstatement{contents/statement/statement}
 %\chapterstatementjpg{sample/scanned-statement.jpg}
 
-\cleardoublepage \phantomsection
-\chapterdedication{contents/dedication/dedication}
+%---- OPTIONAL: DEDICATION PAGE (uncomment if needed) ----
+% \cleardoublepage \phantomsection
+% \chapterdedication{contents/dedication/dedication}
 
-%---- STATEMENT PAGE ----
-% Select statement page type. If you want to use your own JPG file,  
-%	use \chapterstatementjpg{<your *.jpg file path>}. Otherwise, 
-%	use \chapterstatement{contents/statement/statement}.
-%	Choose one only. Comment out unused command(s).
-%
-
-
-%---- PREFACE PAGE ----
-\cleardoublepage \phantomsection
-\chapterpreface{contents/preface/preface}
+%---- OPTIONAL: PREFACE PAGE (uncomment if needed) ----
+% \cleardoublepage \phantomsection
+% \chapterpreface{contents/preface/preface}
 
 %======================================
 % Create Table of Contents, List of Figures, List of Tables
@@ -119,9 +112,9 @@
 
 %======================================
 
-%---- NOMENCLATURE PAGE ----
-\cleardoublepage \phantomsection
-\chapternomenclature{contents/nomenclature/nomenclature}
+%---- NOMENCLATURE PAGE (optional - uncomment if needed) ----
+% \cleardoublepage \phantomsection
+% \chapternomenclature{contents/nomenclature/nomenclature}
 
 %---- INTISARI PAGE----
 \cleardoublepage \phantomsection
@@ -140,23 +133,23 @@
 %  MAIN TEXT
 %======================================
 \startmain
-% You can change 
-%    the filename and location of the files inputted
-% --- Bab 1 s.d 4 ---
+
+% --- Bab 1 & 2: Sama untuk proposal dan tesis ---
 \inputChapter{contents/chapter-1/chapter-1}
 \inputChapter{contents/chapter-2/chapter-2}
-\inputChapter{contents/chapter-3/chapter-3}
-\inputChapter{contents/chapter-4/chapter-4}
 
+% --- Bab 3: Metodologi Penelitian (sama untuk proposal dan tesis) ---
+\inputChapter{contents/chapter-3/chapter-3}
+
+% --- Bab 4+: Berbeda untuk proposal dan tesis ---
 \proposalContent{
-    \inputChapter{contents/chapter-5/chapter-5-proposal}
+    \inputChapter{contents/chapter-4/chapter-4-proposal}  % Bab 4: Jadwal Penelitian
 }
 
-% --- Bab 5 s.d Selesai ---
 \thesisContent{
-    \inputChapter{contents/chapter-5/chapter-5}
-    \inputChapter{contents/chapter-6/chapter-6}
-    \inputChapter{contents/chapter-7/chapter-7}
+    \inputChapter{contents/chapter-4/chapter-4}            % Bab 4: Implementasi
+    \inputChapter{contents/chapter-5/chapter-5}            % Bab 5: Hasil Penelitian dan Pembahasan
+    \inputChapter{contents/chapter-6/chapter-6}            % Bab 6: Kesimpulan dan Saran
 }
 
 
@@ -168,12 +161,6 @@
 %======================================
 \cleardoublepage \phantomsection
 \printbibliography[heading=bibintoc]
-
-%Hapus bagian di bawah setelah tidak diperlukan
-\begin{center}
-    \textcolor{red}{
-        Catatan: Daftar pustaka adalah apa yang dirujuk atau disitasi, bukan apa yang telah dibaca, jika tidak ada dalam sitasi maka tidak perlu dituliskan dalam daftar pustaka.}
-\end{center}
 
 %======================================
 
@@ -189,11 +176,29 @@
 \appendixtables
 \appendixfigures
 
-\cleardoublepage \phantomsection
-\chapterappendix{contents/appendix/appendix-isi-lampiran}
-\chapterappendixadd{contents/appendix/appendix-latex}
-\chapterappendixadd{contents/appendix/appendix-penulisan-referensi}
-\chapterappendixadd{contents/appendix/appendix-code}
+\proposalContent{
+    % Lampiran Proposal:
+    % 1. Paper Referensi Utama
+    \cleardoublepage \phantomsection
+    \chapterappendix{contents/appendix/appendix-paper-referensi}
+    % 2. Surat Pernyataan Penggunaan AI
+    \chapterappendixadd{contents/appendix/appendix-surat-ai}
+}
+
+\thesisContent{
+    % Lampiran Tesis:
+    % 1. Surat Pernyataan Plagiasi
+    \cleardoublepage \phantomsection
+    \chapterappendix{contents/appendix/appendix-isi-lampiran}
+    % 2. Surat Pernyataan Penggunaan AI
+    \chapterappendixadd{contents/appendix/appendix-surat-ai}
+    % 3. Bukti Submit Paper
+    \chapterappendixadd{contents/appendix/appendix-bukti-submit}
+    % 4. Paper Yang di Submit
+    \chapterappendixadd{contents/appendix/appendix-paper-submit}
+    % 5. Hasil Pengecekan Similaritas Paper
+    \chapterappendixadd{contents/appendix/appendix-similaritas}
+}
 
 
 
