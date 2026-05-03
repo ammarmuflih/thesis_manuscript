@@ -459,7 +459,7 @@
         \thispagestyle{fancy}% Use fancy style (footer center for front matter)
         \begin{center}
             \begin{singlespacing}
-                \MakeUppercase{\normalfont\large\textbf{Halaman Pengesahan Usulan Penelitian S2}}\\
+                \MakeUppercase{\normalfont\large\textbf{Halaman Persetujuan Proposal Tesis}}\\
                 \vspace{1em}
                 \begin{flushleft}
                     \begin{tabularx}{\linewidth}{p{3.5cm} c X}
@@ -512,7 +512,7 @@
             \end{singlespacing}
         \end{center}
         \phantomsection
-        \addcontentsline{toc}{chapter}{HALAMAN PENGESAHAN USULAN PENELITIAN S2}
+        \addcontentsline{toc}{chapter}{HALAMAN PERSETUJUAN PROPOSAL TESIS}
     }
 }
 
