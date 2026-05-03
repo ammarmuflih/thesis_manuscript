@@ -31,17 +31,29 @@
 
 % --- 2. PENGATURAN BAHASA & ISTILAH ---
 
-% Format "et al." harus miring
+% Biblatex tidak mengenali 'bahasa', fallback ke 'english'.
+% Maka kita override string English agar sesuai format FMIPA UGM (Bahasa Indonesia).
+% Jika dokumen dalam mode English, string akan di-override ulang di \AtBeginDocument.
 \DefineBibliographyStrings{english}{%
-    andothers = {\mkbibemph{et\addabbrvspace al\adddot}}%
+    andothers = {\mkbibemph{et\addabbrvspace al\adddot}},%
+    and       = {dan},%
+    pages     = {},%
+    page      = {}%
 }
-% \DefineBibliographyStrings{indonesian}{%
-%     andothers = {\mkbibemph{et\addabbrvspace al\adddot}}%
-% }
-% % Mengganti "and" menjadi "dan" (jika bahasa dokumen Indonesia)
-% \DefineBibliographyStrings{indonesian}{%
-%     and = {dan}%
-% }
+
+% Override kembali jika dokumen dalam mode English
+\AtEndPreamble{%
+    \ifdef{\iftoggle}{}{}% safety check
+    \iftoggle{lang}{}{%
+        % English mode: restore "and" and keep pages empty (FMIPA style)
+        \DefineBibliographyStrings{english}{%
+            andothers = {\mkbibemph{et\addabbrvspace al\adddot}},%
+            and       = {and},%
+            pages     = {},%
+            page      = {}%
+        }%
+    }%
+}
 
 % --- 3. FORMAT DAFTAR PUSTAKA ---
 
