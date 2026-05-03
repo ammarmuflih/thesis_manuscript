@@ -25,6 +25,10 @@
     doi=true              % Tampilkan DOI jika ada (wajib per ketentuan terbaru)
 ]{biblatex}
 
+% Make \cite behave like \parencite (add parentheses automatically)
+% Sehingga \cite{ross2004} menghasilkan (Ross, 2004) bukan Ross, 2004
+\let\cite\parencite
+
 % --- 2. PENGATURAN BAHASA & ISTILAH ---
 
 % Format "et al." harus miring
