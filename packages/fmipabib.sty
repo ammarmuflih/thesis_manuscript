@@ -1,20 +1,17 @@
 % fmipabib.sty
 % Paket Bibliografi Khusus FMIPA UGM
-% Berdasarkan Panduan Penulisan 2019/2020
+% Berdasarkan Panduan Penulisan Terbaru FMIPA UGM
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{fmipabib}[2026/02/05 v1.0 FMIPA UGM Bibliography Style]
+\ProvidesPackage{fmipabib}[2026/05/03 v1.3 FMIPA UGM Bibliography Style]
 
 % --- 1. LOAD PAKET BIBLATEX ---
-% Menggunakan style 'ext-authoryear' untuk fleksibilitas format judul
-% \RequirePackage{csquotes} % Disarankan oleh biblatex
-% \RequirePackage[english,indonesian]{babel} % language
 \RequirePackage[
     backend=biber,
     style=ext-authoryear, % Sistem Harvard (Nama-Tahun)
     maxcitenames=2,       % Di teks: max 2 nama. Jika >2 jadi et al
     mincitenames=1,
-    maxbibnames=99,       % Di Daftar Pustaka: Tulis SEMUA nama (Dilarang et al.
+    maxbibnames=99,       % Di Daftar Pustaka: Tulis SEMUA nama (Dilarang et al.)
     giveninits=true,      % Nama depan disingkat jadi inisial (Ross, S.L.)
     uniquename=init,      % Gunakan inisial untuk membedakan nama yang sama
     dashed=false,         % Jangan ganti nama pengarang berulang dengan garis
@@ -26,75 +23,83 @@
 ]{biblatex}
 
 % Make \cite behave like \parencite (add parentheses automatically)
-% Sehingga \cite{ross2004} menghasilkan (Ross, 2004) bukan Ross, 2004
+% Sehingga \cite{key} menghasilkan (Author, Year) bukan Author, Year
 \let\cite\parencite
 
 % --- 2. PENGATURAN BAHASA & ISTILAH ---
 
 % Biblatex tidak mengenali 'bahasa', fallback ke 'english'.
 % Override string English agar sesuai format FMIPA UGM terbaru.
-% Format terbaru menggunakan '&' sebagai penghubung penulis terakhir.
 \DefineBibliographyStrings{english}{%
     andothers = {\mkbibemph{et\addabbrvspace al\adddot}},%
     and       = {\&},%
     pages     = {},%
-    page      = {}%
+    page      = {},%
+    edition   = {edisi ke},%
+    byeditor  = {ed.}%
 }
 
-% Format DOI: tampilkan sebagai "doi: http://doi.org/..."
+% Format DOI: tampilkan sebagai "doi: https://doi.org/..."
 \DeclareFieldFormat{doi}{doi:\space\url{https://doi.org/#1}}
+
+% Format edisi: "edisi ke 2" bukan "2nd ed."
+\DeclareFieldFormat{edition}{edisi ke\space#1}
 
 % --- 3. FORMAT DAFTAR PUSTAKA ---
 
 % A. Spasi: Tunggal di dalam item, 1.5 antar item
 \setlength{\bibitemsep}{\baselineskip} % Jarak antar pustaka ~1.5 spasi
-\AtBeginBibliography{\singlespacing}      % Paksa spasi tunggal di dalam item
+\AtBeginBibliography{\singlespacing}   % Paksa spasi tunggal di dalam item
 
-% B. Format Nama: Nama Belakang, Inisial. 
+% B. Format Nama: Nama Belakang, Inisial.
 \DeclareNameAlias{sortname}{family-given}
 \DeclareNameAlias{default}{family-given}
 \DeclareNameAlias{author}{family-given}
 
-% Jika tidak ada penulis, tampilkan "Anonim"
+% C. Jika tidak ada penulis, tampilkan "Anonim"
+% Override macro author agar menampilkan "Anonim" jika author kosong
 \renewbibmacro*{author}{%
     \ifnameundef{author}
     {\printtext{Anonim}}
     {\printnames{author}}%
 }
 
-% C. Tanda Baca
-% Gunakan koma sebagai pemisah antar elemen, bukan titik 
+% D. Tahun harus muncul setelah nama penulis TANPA kurung
+% ext-authoryear style menampilkan tahun dalam kurung: Author (2001)
+% Override: hapus kurung dari label date di daftar pustaka
+\DeclareFieldFormat{labeldate}{#1}
+\DeclareFieldFormat{extrayear}{}
+
+% E. Tanda Baca: koma sebagai pemisah antar elemen
 \renewcommand*{\newunitpunct}{\addcomma\space}
 
-% D. Format Judul & Tipe Dokumen (Huruf Miring/Tegak)
+% --- 4. FORMAT JUDUL & TIPE DOKUMEN ---
 
-% 1. Buku: Judul Miring [Sumber: 456]
+% 1. Buku: Judul Miring
 \DeclareFieldFormat[book]{title}{\mkbibemph{#1}}
 \DeclareFieldFormat[mvbook]{title}{\mkbibemph{#1}}
 
-% 2. Artikel Jurnal: Nama Jurnal Miring, Judul Artikel Tegak 
+% 2. Artikel Jurnal: Nama Jurnal Miring, Judul Artikel Tegak
 \DeclareFieldFormat[article]{journaltitle}{\mkbibemph{#1}}
-\DeclareFieldFormat[article]{title}{#1} % Tegak, tanpa kutip
+\DeclareFieldFormat[article]{title}{#1}
 
-% 3. Prosiding: Judul Prosiding Miring [Sumber: 465]
+% 3. Prosiding: Judul Prosiding Miring
 \DeclareFieldFormat[inproceedings]{booktitle}{\mkbibemph{#1}}
 \DeclareFieldFormat[inproceedings]{title}{#1}
 
-% 4. Skripsi/Tesis/Disertasi: Tipe dokumen Miring (misal: *Skripsi*) 
-% Panduan F.2: "Judul skripsi, Skripsi/Tesis/Disertasi (harus ditulis miring)"
-\DeclareFieldFormat[thesis]{title}{#1}       % Judul tegak
-\DeclareFieldFormat[thesis]{type}{\mkbibemph{#1}} % Tipe miring
+% 4. Skripsi/Tesis/Disertasi: Tipe dokumen Miring
+\DeclareFieldFormat[thesis]{title}{#1}
+\DeclareFieldFormat[thesis]{type}{\mkbibemph{#1}}
 
-% 5. Artikel dalam Buku: Judul Artikel Miring & Judul Buku Miring 
-% INI UNIK: Biasanya judul artikel dikutip ("..."), tapi Panduan FMIPA minta MIRING.
+% 5. Artikel dalam Buku: Judul Artikel Miring & Judul Buku Miring
 \DeclareFieldFormat[incollection]{title}{\mkbibemph{#1}}
 \DeclareFieldFormat[incollection]{booktitle}{\mkbibemph{#1}}
 
-% 6. Internet: URL Miring 
+% 6. Internet: URL Miring
 \DeclareFieldFormat{url}{\mkbibemph{#1}}
 \DeclareFieldFormat{urldate}{diakses tanggal #1}
 
-% 7. Laporan Penelitian: Nama Laporan Miring
+% 7. Laporan Penelitian: Tipe Miring
 \DeclareFieldFormat[report]{type}{\mkbibemph{#1}}
 \DeclareFieldFormat[report]{title}{#1}
 
@@ -112,7 +117,7 @@
     \newunit
 }
 
-% --- 4. MAKRO PENYUSUNAN ELEMEN ---
+% --- 5. MAKRO PENYUSUNAN ELEMEN ---
 
 % Menghapus "In:"
 \renewbibmacro*{in:}{}
@@ -123,8 +128,7 @@
     \setunit*{\addcomma\space}%
     \printurldate}
 
-% Mengatur urutan Jurnal: Vol, No, Halaman
-% Panduan minta: nama majalah, nomor, volume dan halaman.
+% Mengatur urutan Jurnal: nama majalah, nomor, volume dan halaman
 \renewbibmacro*{journal+issuetitle}{%
     \usebibmacro{journal}%
     \setunit*{\addcomma\space}%
