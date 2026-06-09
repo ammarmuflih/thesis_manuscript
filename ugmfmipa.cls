@@ -302,7 +302,7 @@
         \setcounter{page}{1}
         \pagenumbering{roman}
         \begin{center}
-            \begin{singlespacing}
+            \begin{onehalfspacing}
                 \MakeUppercase{\normalfont\bfseries\@titleind}\\
                 \vspace{0.5em}
                 {\normalfont\itshape\@titleeng}\\
@@ -325,7 +325,7 @@
                     \MakeUppercase{\@city} \\
                     \@yearsubmit
                 }
-            \end{singlespacing}
+            \end{onehalfspacing}
         \end{center}
     }
 }
@@ -337,7 +337,7 @@
         \setcounter{page}{1}
         \pagenumbering{roman}
         \begin{center}
-            \begin{singlespacing}
+            \begin{onehalfspacing}
                 \MakeUppercase{\normalfont\bfseries \iftoggle{lang}{Proposal Tesis}{Thesis Proposal}}\\
                 \vspace{1.5cm}
                 \MakeUppercase{\normalfont\bfseries\@titleind}\\
@@ -362,7 +362,7 @@
                     \MakeUppercase{\@city} \\
                     \@yearsubmit
                 }
-            \end{singlespacing}
+            \end{onehalfspacing}
         \end{center}
     }
 }
