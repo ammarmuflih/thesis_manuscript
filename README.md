@@ -264,3 +264,5 @@ Template ini dilisensikan di bawah [MIT License](LICENSE).
 - Bibliografi Harvard style dengan DOI support
 - Template lampiran lengkap sesuai ketentuan terbaru
 - Contoh isi bab untuk Magister Ilmu Komputer (Computer Vision / Deep Learning)
+
+push test
