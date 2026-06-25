@@ -28,7 +28,12 @@ Penelitian ini mengembangkan model estimasi kedalaman (ringan??) menggunakan pen
 % Bagian ini berisi penjelasan detail tentang metode/model/desain yang digunakan dalam penelitian. Pembahasan diawali dengan penjelasan secara umum tahap-tahap metode/model/desain/algoritma yang dilengkapi dengan bagan alir, kemudian setiap sub-bab menjelaskan lebih detail setiap tahapan yang disertai dengan sumber referensi yang terkait, ilustrasi/bagan/bagan alir bagaimana tahap dilakukan, dan persamaan-persamaan yang digunakan.
 % Dalam rancangan metode ini yang dideskripsikan bisa berupa algoritma, perangkat lunak, perangkat keras atau hal lainnya yang terkait dengan penelitian. Berikut adalah salah satu contoh kerangka penulisan untuk kasus Estimasi Umur Berbasis Citra Wajah Menggunakan Ciri Tekstur dan Metode Support Vector Machine:
 
-\subsection{Overview Metode/Model/Algoritma}
+\subsection{Overview Metode}
+Penelitian ini menggunakan pendekatan \textit{knowledge distillation} berbasis 
+\textit{feature-based} dan \textit{response-based} dengan memanfaatkan beberapa 
+sinyal pelatihan, meliputi \textit{pseudo depth} dari model \textit{teacher}, 
+\textit{sparse ground truth}, \textit{latent space} dari keluaran \textit{encoder}, 
+serta \textit{latent space} dari beberapa lapisan pada \textit{decoder}.
 
 \begin{figure}[h]
 	\centering
@@ -39,21 +44,33 @@ Penelitian ini mengembangkan model estimasi kedalaman (ringan??) menggunakan pen
 
 \textcolor{red}{Catatan: Ganti gambar di atas dengan diagram overview metode Anda. Simpan file gambar di folder contents/chapter-3/ dengan nama overview-metode.png.}
 
-\subsection{Prapemrosesan Citra}
+\subsection{\textit{Knowledge Distilation}}
 
-Jelaskan tahapan prapemrosesan yang dilakukan pada data citra, seperti normalisasi, resizing, filtering, dll. Sertakan persamaan matematika jika diperlukan.
+Jelaskan apa itu knowledge distillation secara singkat (transfer pengetahuan dari model besar ke model kecil).
 
-\subsection{Lokalisasi Citra Wajah}
+\subsection{\textit{Teacher Model}}
+Jelaskan
+\it{Arsitektur yang digunakan sebagai teacher}
+\it{Mengapa model tersebut dipilih}
+\it{Output yang dihasilkan → dalam kasusmu: pseudo depth}
 
-Jelaskan metode yang digunakan untuk mendeteksi dan melokalisasi wajah pada citra. Sertakan referensi metode yang digunakan.
+\subsection{\textit{Student Model}}
+Jelaskan
+\it{Arsitektur student yang dilatih}
+\it{Apa yang dipelajari dari teacher}
+\it{Komponen yang terlibat → encoder, decoder, latent space}
 
-\subsection{Ekstraksi Ciri Tekstur}
+\subsection{Sinyal Pelatihan}
+Jelaskan
+\it{Pseudo depth dari teacher}
+\it{Sparse ground truth}
+\it{Latent space dari encoder}
+\it{Latent space dari layer-layer decoder}
 
-Jelaskan metode ekstraksi fitur yang digunakan, seperti LBP, HOG, SIFT, dll. Sertakan persamaan dan ilustrasi jika diperlukan.
-
-\subsection{Model Support Vector Machine}
-
-Jelaskan arsitektur model yang digunakan, parameter-parameter yang diatur, dan proses pelatihan model.
+\subsection{Jenis Distillasi}
+Bedakan dan jelaskan:
+\it{Feature-based distillation → dari mana ke mana}
+\it{Response-based distillation → dari mana ke mana}
 
 \textcolor{red}{Catatan: Sesuaikan sub-sub bab di atas dengan metode/algoritma yang Anda gunakan dalam penelitian. Hapus atau tambahkan sub bab sesuai kebutuhan.}
 
